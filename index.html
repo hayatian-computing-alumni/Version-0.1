@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PakOS — Built for the Future</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-line" id="scrollLine"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#hero" class="logo">
+    <div class="logo-icon">PK</div>
+    <span class="logo-text">Pak<span>OS</span></span>
+  </a>
+  <ul>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#download">Download</a></li>
+    <li><a href="#documentation">Docs</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#download" class="nav-cta">Get PakOS</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Open Source · Kernel v0.1-alpha</div>
+    <h1 class="hero-title">
+      A Kernel<br>
+      <span class="accent">Built in Pakistan.</span><br>
+      <span class="dim">For the World.</span>
+    </h1>
+    <p class="hero-sub">
+      PakOS is a university-developed Linux-based kernel engineered for performance, security, and sovereignty — designed from the ground up by Pakistani students and researchers.
+    </p>
+    <div class="hero-actions">
+      <a href="#download" class="btn-primary">⬇ Download v0.1</a>
+      <a href="https://github.com" class="btn-secondary">◎ View Source</a>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot dot-r"></span>
+        <span class="dot dot-y"></span>
+        <span class="dot dot-g"></span>
+        <span class="term-title">pakos@localhost — bash</span>
+      </div>
+      <div class="terminal-body">
+        <div><span class="t-prompt">pakos@dev</span><span class="t-dim">:</span><span class="c-cyan">~</span><span class="c-dim"> $ </span><span class="t-cmd">uname -a</span></div>
+        <div class="t-out">PakOS 0.1-alpha #1 SMP PREEMPT_DYNAMIC 2025 x86_64 GNU/Linux</div>
+        <div>&nbsp;</div>
+        <div><span class="t-prompt">pakos@dev</span><span class="t-dim">:</span><span class="c-cyan">~</span><span class="c-dim"> $ </span><span class="t-cmd">cat /proc/pakos/info</span></div>
+        <div><span class="t-key">kernel</span>     <span class="t-val">= PakOS/0.1-alpha</span></div>
+        <div><span class="t-key">arch</span>       <span class="t-val">= x86_64 | arm64</span></div>
+        <div><span class="t-key">origin</span>     <span class="t-val">= <span class="c-green">Pakistan 🇵🇰</span></span></div>
+        <div><span class="t-key">status</span>     <span class="t-val">= <span class="c-green">running</span></span></div>
+        <div>&nbsp;</div>
+        <div><span class="t-prompt">pakos@dev</span><span class="t-dim">:</span><span class="c-cyan">~</span><span class="c-dim"> $ </span><span class="t-cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <p class="section-label">Core Capabilities</p>
+    <h2 class="section-title">Engineered for<br>Modern Computing</h2>
+    <p class="section-desc">PakOS is designed with a clean architecture, real-time scheduling, and a security-first philosophy. Every subsystem is purpose-built.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Preemptive Scheduler</h3>
+        <p>Custom PREEMPT_DYNAMIC scheduler with real-time priority classes and low-latency task switching optimised for modern multi-core CPUs.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Hardened Security</h3>
+        <p>Stack canaries, ASLR, SMEP/SMAP enforcement, and a built-in LSM framework provide multiple layers of kernel-level protection.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <h3>Smart Memory Manager</h3>
+        <p>Adaptive page allocator with transparent huge pages, NUMA-aware placement, and low-memory pressure handling out of the box.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌐</div>
+        <h3>Native Networking Stack</h3>
+        <p>Rebuilt TCP/IP implementation with BPF-based packet filtering, eBPF hooks, and zero-copy socket buffers for high-throughput I/O.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <h3>PAKFS Filesystem</h3>
+        <p>An experimental journaling filesystem with copy-on-write semantics, inline data extents, and crash-consistent atomic operations.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔧</div>
+        <h3>Modular Driver Model</h3>
+        <p>Hot-pluggable kernel modules, unified device tree support, and a clean driver API compatible with existing Linux kernel drivers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download">
+  <div class="container">
+    <p class="section-label">Get the Kernel</p>
+    <h2 class="section-title">Download PakOS</h2>
+    <p class="section-desc">Available as a pre-compiled binary image or full source tarball. Both distributions include the toolchain, documentation, and sample rootfs.</p>
+
+    <div class="download-grid">
+      <div class="dl-card featured">
+        <span class="dl-tag">Recommended</span>
+        <h3>PakOS Stable</h3>
+        <p class="dl-version">v0.1.0-alpha · Released May 2025</p>
+        <div class="dl-meta">
+          <span><strong>x86_64</strong>Architecture</span>
+          <span><strong>142 MB</strong>ISO Image</span>
+          <span><strong>GPL-2.0</strong>License</span>
+        </div>
+        <div class="hash-block">
+          SHA256: <span>a3f8c2d1e9b04...7f21cc3a8d50</span>
+        </div>
+        <a href="#" class="btn-primary" style="display:inline-block; font-size:0.8rem;">⬇ Download ISO</a>
+      </div>
+
+      <div class="dl-card">
+        <span class="dl-tag" style="background:var(--surface);color:var(--cyan);border:1px solid var(--cyan2);">Source</span>
+        <h3>PakOS Source</h3>
+        <p class="dl-version">v0.1.0-alpha · Full Kernel Source</p>
+        <div class="dl-meta">
+          <span><strong>All Arch</strong>Architecture</span>
+          <span><strong>18 MB</strong>Tarball (.tar.xz)</span>
+          <span><strong>GPL-2.0</strong>License</span>
+        </div>
+        <div class="hash-block">
+          SHA256: <span>c17b9e4d2a86f...0d34ab72f1c9</span>
+        </div>
+        <a href="#" class="btn-secondary" style="display:inline-block; font-size:0.8rem;">⬇ Download Source</a>
+      </div>
+    </div>
+
+    <p style="margin-top:1.5rem; font-size:0.75rem; color:var(--text3);">
+      // ARM64 builds are in active development · Check GitHub for nightly builds
+    </p>
+  </div>
+</section>
+
+<!-- DOCUMENTATION -->
+<section id="documentation">
+  <div class="container">
+    <p class="section-label">Documentation</p>
+    <h2 class="section-title">Start Building</h2>
+    <p class="section-desc">Everything you need to compile, boot, and extend PakOS. All documentation is version-controlled alongside the source code.</p>
+
+    <div class="docs-layout">
+      <aside class="docs-sidebar">
+        <div class="sidebar-section">
+          <p class="sidebar-label">Getting Started</p>
+          <a href="#" class="active">Quick Start</a>
+          <a href="#">System Requirements</a>
+          <a href="#">Build from Source</a>
+          <a href="#">Booting PakOS</a>
+        </div>
+        <div class="sidebar-section">
+          <p class="sidebar-label">Kernel Internals</p>
+          <a href="#">Scheduler</a>
+          <a href="#">Memory Management</a>
+          <a href="#">PAKFS</a>
+          <a href="#">Networking</a>
+        </div>
+        <div class="sidebar-section">
+          <p class="sidebar-label">Development</p>
+          <a href="#">Writing Modules</a>
+          <a href="#">Debugging</a>
+          <a href="#">Contributing</a>
+        </div>
+      </aside>
+
+      <div class="docs-content">
+        <div class="doc-block">
+          <h3>// Quick Start</h3>
+          <p>Clone the PakOS repository and use the provided Makefile to compile and boot the kernel image in a QEMU virtual machine.</p>
+          <div class="code-block">
+<span class="c-dim"># Clone the repository</span>
+<span class="c-green">$</span> git clone https://github.com/pakos-kernel/pakos.git
+<span class="c-green">$</span> cd pakos
+
+<span class="c-dim"># Install build dependencies</span>
+<span class="c-green">$</span> sudo apt install build-essential libncurses-dev \
+    bison flex libssl-dev libelf-dev qemu-system-x86
+
+<span class="c-dim"># Configure and build</span>
+<span class="c-green">$</span> make pakos_defconfig
+<span class="c-green">$</span> make -j$(nproc)
+
+<span class="c-dim"># Boot in QEMU</span>
+<span class="c-green">$</span> make qemu-run
+<span class="c-amber">→  Booting PakOS 0.1-alpha ... OK</span>
+          </div>
+        </div>
+
+        <div class="doc-block">
+          <h3>// System Requirements</h3>
+          <p>Minimum requirements for building and running PakOS. Development is primarily tested on Ubuntu 22.04 LTS and Fedora 39.</p>
+          <div class="code-block">
+<span class="c-cyan">Arch</span>       x86_64 · arm64 (experimental)
+<span class="c-cyan">RAM</span>        512 MB minimum · 2 GB recommended
+<span class="c-cyan">Disk</span>       4 GB for build environment
+<span class="c-cyan">Compiler</span>   GCC 12+ or Clang 16+
+<span class="c-cyan">Host OS</span>    Linux (Ubuntu, Fedora, Arch)
+          </div>
+        </div>
+
+        <div class="doc-block">
+          <h3>// Writing a Kernel Module</h3>
+          <p>PakOS follows standard Linux module conventions. A minimal "Hello World" module looks like this:</p>
+          <div class="code-block">
+<span class="c-amber">#include</span> &lt;linux/module.h&gt;
+<span class="c-amber">#include</span> &lt;linux/kernel.h&gt;
+<span class="c-amber">#include</span> &lt;linux/init.h&gt;
+
+<span class="c-cyan">static int</span> __init hello_init(<span class="c-cyan">void</span>) {
+    <span class="c-green">pr_info</span>(<span class="c-dim">"PakOS module loaded\n"</span>);
+    <span class="c-amber">return</span> 0;
+}
+
+<span class="c-cyan">static void</span> __exit hello_exit(<span class="c-cyan">void</span>) {
+    <span class="c-green">pr_info</span>(<span class="c-dim">"PakOS module removed\n"</span>);
+}
+
+<span class="c-green">module_init</span>(hello_init);
+<span class="c-green">module_exit</span>(hello_exit);
+<span class="c-green">MODULE_LICENSE</span>(<span class="c-dim">"GPL"</span>);
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / TEAM -->
+<section id="about">
+  <div class="container">
+    <p class="section-label">About the Project</p>
+    <h2 class="section-title">Built at a University.<br>Open to Everyone.</h2>
+
+    <div class="about-intro">
+      <div>
+        <p class="section-desc" style="margin-bottom:1.5rem;">
+          PakOS is an academic open-source project born from a university operating systems research lab. Our goal is to develop a fully functional, well-documented Linux-based kernel that serves both as a research platform and a practical teaching tool for systems programming in Pakistan and beyond.
+        </p>
+        <p style="font-size:0.8rem; color:var(--text3); line-height:1.9;">
+          The project is 100% open source under the GPL-2.0 license. We welcome contributions from students, researchers, and engineers worldwide.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">12</div>
+          <div class="stat-label">Contributors</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">48K</div>
+          <div class="stat-label">Lines of Code</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">v0.1</div>
+          <div class="stat-label">Current Release</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">GPL</div>
+          <div class="stat-label">Open License</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="section-label">Core Team</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="avatar" style="background:var(--green);">AA</div>
+        <h4>Ahmed Aslam</h4>
+        <p class="team-role">Kernel Architect</p>
+        <p class="team-dept">Dept. of Computer Science</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:var(--cyan);">SR</div>
+        <h4>Sara Raza</h4>
+        <p class="team-role">Memory Systems</p>
+        <p class="team-dept">Systems Research Lab</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:var(--amber);">HK</div>
+        <h4>Hassan Khan</h4>
+        <p class="team-role">Scheduler & RT</p>
+        <p class="team-dept">Dept. of Computer Science</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:#b388ff;">ZM</div>
+        <h4>Zara Malik</h4>
+        <p class="team-role">Security & LSM</p>
+        <p class="team-dept">Cybersecurity Research</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© 2025 PakOS Project · University Open Source Initiative · GPL-2.0 License</p>
+    <div class="footer-links">
+      <a href="#">GitHub</a>
+      <a href="#">Mailing List</a>
+      <a href="#">Bug Tracker</a>
+      <a href="#">IRC</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const el = document.getElementById('scrollLine');
+    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+    el.style.width = Math.min(pct, 100) + '%';
+  });
+</script>
+</body>
+</html>
